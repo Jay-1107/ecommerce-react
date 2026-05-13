@@ -1,8 +1,8 @@
-# Stitch Premium Coffee Brand Landing Page
+# Premium E-commerce Website
 
 ## Overview
 
-Stitch Premium Coffee is a modern, responsive web application built as a landing page for a premium coffee brand. This project showcases high-quality coffee products, provides an interactive menu, and includes e-commerce functionalities such as a shopping cart, product details, and user authentication. The application features a sleek design with support for both dark and light modes, smooth animations, and a fully responsive layout optimized for all devices.
+Premium Coffee is a modern, responsive web application built as a landing page for a premium coffee brand. This project showcases high-quality coffee products, provides an interactive menu, and includes e-commerce functionalities such as a shopping cart, product details, and user authentication. The application features a sleek design with support for both dark and light modes, smooth animations, and a fully responsive layout optimized for all devices.
 
 The project is developed using React and Vite for fast development and building, with Tailwind CSS for styling, Framer Motion for animations, and React Router for navigation.
 
@@ -21,6 +21,12 @@ The project is developed using React and Vite for fast development and building,
 - **Icons**: Modern icons from Lucide React for a polished look.
 - **Form Handling**: Custom input components for authentication and contact forms.
 - **Context Management**: React Context for managing cart, authentication, and theme states.
+
+## Screenshots
+
+![Website Screenshot 1](src/images/Website.png)
+
+![Website Screenshot 2](src/images/Website2.png)
 
 ## Libraries and Dependencies
 
