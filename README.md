@@ -25,7 +25,7 @@ The project is developed using React and Vite for fast development and building,
 ## Web Design
 
 ![Website Screenshot 2](src/assets/images/Website.png)
-![Website Screenshot 1](src/assets/images/Wbsite2.png)
+<!-- ![Website Screenshot 1](src/assets/images/Wbsite2.png) -->
 
 ## Libraries and Dependencies
 
