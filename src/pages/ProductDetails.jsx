@@ -21,8 +21,8 @@ const imgesKenya = (name) =>
   new URL(`../assets/images/Kenya/${name}`, import.meta.url).href;
 const suMatr = (name) =>
   new URL(`../assets/images/SumatraReserve/${name}`, import.meta.url).href;
-const coldBrew = (item) =>
-  new URL(`../assets/images/ClodBrew/${item}`, import.meta.url).href;
+// const coldBrew = (item) =>
+//   new URL(`../assets/images/ClodBrew/${item}`, import.meta.url).href;
 
 const allProducts = [
   {
@@ -237,10 +237,10 @@ const allProducts = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuC0jLYSIoKdyOOBxhEIEXBHXgx4l4Y2eHGgIZUUVfBA--1ZZk9fsNCM-EL_lScejQcJ823DzYFXN9egW8vrpIU35t5487lW16KY5hozK0RIfLvk7HziZl2vLS7STsm3kXeZjEyGthxbo4szfWbtY2yybLxfy3O7j8ixL8zipTfjzjJsnx3GAWsuKuN0L9xhp5q3MozgMta3A1agEmfB0f1hIMYonAa9432a43-TOoS3lUsgkkQKz-Ietnhtcopw5x4hoYC2m_IxrA",
     images: [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuC0jLYSIoKdyOOBxhEIEXBHXgx4l4Y2eHGgIZUUVfBA--1ZZk9fsNCM-EL_lScejQcJ823DzYFXN9egW8vrpIU35t5487lW16KY5hozK0RIfLvk7HziZl2vLS7STsm3kXeZjEyGthxbo4szfWbtY2yybLxfy3O7j8ixL8zipTfjzjJsnx3GAWsuKuN0L9xhp5q3MozgMta3A1agEmfB0f1hIMYonAa9432a43-TOoS3lUsgkkQKz-Ietnhtcopw5x4hoYC2m_IxrA",
-      coldBrew("ColdBBlend.jpg"),
-      coldBrew("ColdBlend.jpg"),
-      coldBrew("ColdBrew.jpg"),
-      coldBrew("ColdBrewBlend.jpg"),
+      // coldBrew("ColdBBlend.jpg"),
+      // coldBrew("ColdBlend.jpg"),
+      // coldBrew("ColdBrew.jpg"),
+      // coldBrew("ColdBrewBlend.jpg"),
     ],
     rating: 4.5,
     reviewCount: 178,
