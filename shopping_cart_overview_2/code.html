@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up - Coffee Co.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b86114",
+                        "primary-dark": "#9a5111",
+                        "secondary": "#a89483",
+                        "secondary-light": "#887463",
+                        "background-light": "#FDFBF7", 
+                        "background-dark": "#1a1613",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#26201b",
+                        "surface-darker": "#1f1a16",
+                        "text-light": "#3e322b", 
+                        "text-dark": "#f0e6d9",
+                        "text-muted-dark": "#d6cec7",
+                        "border-light": "#e8e0d9", 
+                        "border-dark": "#3a322c",
+                        "espresso": "#3e322b",
+                        "espresso-hover": "#2a221b",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2a221b; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #5c4d41; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b86114; 
+        }
+        .dark input[type="number"]::-webkit-inner-spin-button,
+        .dark input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+<script>
+        // Simple toggle for demo purposes, usually handled by framework or local storage
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col text-text-light dark:text-text-dark antialiased transition-colors duration-300">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark bg-white/95 dark:bg-surface-darker/95 px-6 py-4 backdrop-blur-md lg:px-10 transition-colors duration-300">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-text-light dark:text-text-dark hover:opacity-80 transition-opacity" href="#">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">coffee</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em]">Coffee Co.</h2>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Shop</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Subscriptions</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Brew Guides</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Locations</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<div class="flex gap-3">
+<button aria-label="Toggle Dark Mode" class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg size-10 bg-transparent hover:bg-black/5 dark:hover:bg-white/10 text-text-light dark:text-text-dark transition-colors" onclick="toggleDarkMode()">
+<span class="material-symbols-outlined text-[24px] dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined text-[24px] hidden dark:block">light_mode</span>
+</button>
+<button class="hidden md:flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-transparent border border-border-light dark:border-border-dark hover:border-primary hover:text-primary dark:text-text-dark dark:hover:border-primary text-text-light text-sm font-bold leading-normal transition-all">
+                    Sign In
+                </button>
+<button class="relative flex cursor-pointer items-center justify-center overflow-hidden rounded-lg size-10 bg-primary text-white hover:bg-primary-dark transition-colors shadow-md shadow-primary/20">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+<span class="absolute top-2 right-2 size-2 bg-white rounded-full"></span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center w-full px-4 py-12 md:px-8 lg:px-12 bg-background-light dark:bg-background-dark">
+<div class="w-full max-w-md">
+<div class="bg-surface-light dark:bg-surface-dark rounded-3xl border border-border-light dark:border-border-dark shadow-xl shadow-stone-200/50 dark:shadow-none p-8 md:p-10 transition-all duration-300">
+<div class="text-center mb-8">
+<div class="inline-flex items-center justify-center size-12 rounded-full bg-primary/10 text-primary mb-4">
+<span class="material-symbols-outlined text-2xl">person_add</span>
+</div>
+<h1 class="text-3xl md:text-4xl font-extrabold text-text-light dark:text-text-dark tracking-tight mb-2">Join the Ritual</h1>
+<p class="text-secondary-light dark:text-secondary text-sm">Create your account to unlock exclusive roasts and rewards.</p>
+</div>
+<form class="space-y-5" onsubmit="event.preventDefault();">
+<div>
+<label class="block text-sm font-semibold text-text-light dark:text-text-dark mb-1.5" for="fullname">Full Name</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-secondary-light dark:text-secondary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-2.5 bg-white dark:bg-surface-darker border border-border-light dark:border-border-dark rounded-xl text-text-light dark:text-text-dark placeholder:text-secondary-light/60 dark:placeholder:text-secondary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-sm" id="fullname" placeholder="Enter your full name" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold text-text-light dark:text-text-dark mb-1.5" for="email">Email Address</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-secondary-light dark:text-secondary">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-2.5 bg-white dark:bg-surface-darker border border-border-light dark:border-border-dark rounded-xl text-text-light dark:text-text-dark placeholder:text-secondary-light/60 dark:placeholder:text-secondary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-sm" id="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold text-text-light dark:text-text-dark mb-1.5" for="password">Password</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-secondary-light dark:text-secondary">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<input class="block w-full pl-10 pr-10 py-2.5 bg-white dark:bg-surface-darker border border-border-light dark:border-border-dark rounded-xl text-text-light dark:text-text-dark placeholder:text-secondary-light/60 dark:placeholder:text-secondary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-sm" id="password" placeholder="Create a password" required="" type="password"/>
+<button class="absolute inset-y-0 right-0 pr-3 flex items-center text-secondary-light dark:text-secondary hover:text-text-light dark:hover:text-text-dark transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold text-text-light dark:text-text-dark mb-1.5" for="confirm-password">Confirm Password</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-secondary-light dark:text-secondary">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+</div>
+<input class="block w-full pl-10 pr-10 py-2.5 bg-white dark:bg-surface-darker border border-border-light dark:border-border-dark rounded-xl text-text-light dark:text-text-dark placeholder:text-secondary-light/60 dark:placeholder:text-secondary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-sm" id="confirm-password" placeholder="Confirm your password" required="" type="password"/>
+</div>
+</div>
+<div class="flex items-start mt-2">
+<div class="flex items-center h-5">
+<input class="w-4 h-4 border border-border-light dark:border-border-dark rounded bg-white dark:bg-surface-darker text-primary focus:ring-primary/20 dark:focus:ring-offset-surface-dark" id="terms" required="" type="checkbox"/>
+</div>
+<label class="ml-2 text-xs text-secondary-light dark:text-secondary" for="terms">
+                            I agree to the <a class="text-primary hover:underline font-medium" href="#">Terms of Service</a> and <a class="text-primary hover:underline font-medium" href="#">Privacy Policy</a>.
+                        </label>
+</div>
+<button class="w-full flex justify-center items-center gap-2 py-3.5 px-4 border border-transparent rounded-xl shadow-lg text-sm font-bold text-white bg-espresso hover:bg-espresso-hover dark:bg-primary dark:hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-espresso transition-all duration-200 transform hover:-translate-y-0.5" type="submit">
+                        Create Account
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</form>
+<div class="mt-8">
+<div class="relative">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-border-light dark:border-border-dark"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-2 bg-surface-light dark:bg-surface-dark text-secondary-light dark:text-secondary">Or continue with</span>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-2 gap-3">
+<a class="flex items-center justify-center w-full px-4 py-2.5 border border-border-light dark:border-border-dark rounded-xl shadow-sm bg-white dark:bg-surface-darker text-sm font-medium text-text-light dark:text-text-dark hover:bg-gray-50 dark:hover:bg-surface-dark transition-colors" href="#">
+<svg aria-hidden="true" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.53-6.033-5.652 c0-3.122,2.701-5.652,6.033-5.652c1.489,0,2.82,0.512,3.878,1.35l2.861-2.92C17.502,3.614,15.158,2.71,12.545,2.71 C7.28,2.71,3.013,6.71,3.013,11.644c0,4.935,4.267,8.934,9.532,8.934c4.891,0,8.88-3.32,9.888-8.176h-9.888V10.239z"></path>
+</svg>
+                                Google
+                            </a>
+<a class="flex items-center justify-center w-full px-4 py-2.5 border border-border-light dark:border-border-dark rounded-xl shadow-sm bg-white dark:bg-surface-darker text-sm font-medium text-text-light dark:text-text-dark hover:bg-gray-50 dark:hover:bg-surface-dark transition-colors" href="#">
+<svg aria-hidden="true" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+<path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill="#1877F2"></path>
+</svg>
+                                Facebook
+                            </a>
+</div>
+</div>
+<div class="mt-8 text-center">
+<p class="text-sm text-secondary-light dark:text-secondary">
+                        Already have an account? 
+                        <a class="font-bold text-primary hover:text-primary-dark transition-colors" href="#">Login</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-border-light dark:border-border-dark bg-white dark:bg-surface-darker py-10 px-6 lg:px-12 transition-colors duration-300">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl text-primary">coffee</span>
+<span class="font-bold text-lg">Coffee Co.</span>
+</div>
+<p class="text-secondary-light dark:text-secondary text-sm">© 2024 Coffee Co. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-secondary-light dark:text-secondary hover:text-primary transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="text-secondary-light dark:text-secondary hover:text-primary transition-colors text-sm" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
