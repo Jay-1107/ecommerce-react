@@ -22,7 +22,7 @@ The project is developed using React and Vite for fast development and building,
 - **Form Handling**: Custom input components for authentication and contact forms.
 - **Context Management**: React Context for managing cart, authentication, and theme states.
 
-## Screenshots
+## Web Design
 
 ![Website Screenshot 2](src/assets/images/Website.png)
 ![Website Screenshot 1](src/assets/images/Wbsite2.png)
