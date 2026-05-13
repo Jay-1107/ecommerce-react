@@ -108,7 +108,7 @@ Follow these steps to set up and run the project on your local machine:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/stitch-premium-coffee.git
+git clone https://github.com/Jay-1107/ecommerce-react.git
 ```
 
 Replace `your-username` with your actual GitHub username.
@@ -116,7 +116,7 @@ Replace `your-username` with your actual GitHub username.
 ### 2. Navigate to the Project Folder
 
 ```bash
-cd stitch-premium-coffee
+cd ecommerce-react
 ```
 
 ### 3. Install Dependencies
