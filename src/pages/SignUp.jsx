@@ -154,7 +154,9 @@ const SignUp = () => {
           <span className="material-symbols-outlined text-3xl text-[#b86114]">
             coffee
           </span>
-          <span className="font-bold text-xl text-[#FDFBF7]">Coffee Co.</span>
+          <span className="font-bold text-xl text-[#FDFBF7]">
+            Espresso & Co.
+          </span>
         </Link>
 
         <motion.div
@@ -455,7 +457,7 @@ const SignUp = () => {
           transition={{ delay: 0.8, duration: 0.5 }}
           className="hidden lg:flex absolute bottom-6 w-full justify-between px-10 text-xs text-[#e6dec8]/40"
         >
-          <p>© 2024 Coffee Co.</p>
+          <p>© 2024 Espresso & Co.</p>
           <div className="flex gap-4">
             <a
               href="#"
